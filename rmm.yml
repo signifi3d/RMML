@@ -178,3 +178,22 @@ RMMs:
       Domains: # note, self hosted versions exist, unreliable
       Ports:
         - 443
+  SplashTop: 
+    Executables:
+      SignerSubjectName: Splashtop Inc.
+      MacOSSigner:
+      Windows:
+        - SplashtopClient.exe
+        - Splashtop_Client.exe
+        - SplashtopSOS.exe
+        - *Splashtop*Streamer*.exe # There are other RMM products that also seem to package this and name it in various ways.
+        - strwinclt.exe
+      MacOS:
+        - # NEEDED
+      Linux:
+        - # NEEDED
+    NetConn:
+      Domains:
+        - remote.splashtop.com
+      Ports:
+        - 443
